@@ -28,7 +28,8 @@ public class Chaining {
      */
     public int chain(int key) {
         //ADD YOUR CODE HERE (change return statement)
-        return -1;
+        int hashVal = ((A * key) % Math.pow(2, w);
+        return hashVal;
     }
 
     /**
