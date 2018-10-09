@@ -97,6 +97,22 @@ public class main {
                         The CSV file will output the result which you can visualize
              */
             //ADD YOUR CODE HERE
+            int probColl = 0;
+            int chainColl = 0;
+
+            for(int i = 0; i < n; i++){
+                chainColl += MyChainTable.insertKey(keysToInsert[i]);
+                probColl += MyProbeTable.insertKey(keysToInsert[i]);
+            }
+
+            double alpha = (double) n / (double) MyChainTable.m;
+            alphaList.add(alpha);
+
+            double avgChainCol = ((double) (chainColl/n));
+            double avgProbCol = ((double) (probColl/n));
+
+            avColListChain.add(avgChainCol);
+            avColListProbe.add(avgProbCol);
         }
 
         generateCSVOutputFile("n_comparison.csv", alphaList, avColListChain, avColListProbe);

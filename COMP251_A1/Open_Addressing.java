@@ -1,7 +1,7 @@
 package A1;
 
 import static A1.main.*;
-import A1.Chaining.*;
+import static A1.Chaining.*;
 
 public class Open_Addressing {
 
@@ -30,8 +30,9 @@ public class Open_Addressing {
      * Implements the hash function g(k)
      */
     public int probe(int key, int i) {
-        int hashVal = (Chaining.chain(key)+ i) % Math.pow(2, r);
-        return hashVal;
+
+        //int hashVal = (chain(key)+ i) % Math.pow(2, r);
+        return -1;
     }
 
     /**
