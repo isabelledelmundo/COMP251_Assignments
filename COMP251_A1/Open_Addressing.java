@@ -30,9 +30,11 @@ public class Open_Addressing {
      * Implements the hash function g(k)
      */
     public int probe(int key, int i) {
+        //h function
+        int multFunc = (int) ((A * key) % Math.pow(2, w)) >>> (w - r);
+        int hashVal = (multFunc + i) % (int) Math.pow(2, r);
 
-        //int hashVal = (chain(key)+ i) % Math.pow(2, r);
-        return -1;
+        return hashVal;
     }
 
     /**
@@ -48,8 +50,29 @@ public class Open_Addressing {
      */
     public int insertKey(int key) {
         //ADD YOUR CODE HERE (CHANGE THE RETURN STATEMENT)
+
+        //initializing i, which is the probe number in this case
+        int i;
+
+        //i is the number of times the hash value has to be calculated before it does not
+        //hit a collision
+        //the number of iterations of the loop (i) is equivalent to number of collisions.
+        for (i = 0; i < (this.m); i++) {
+            int hashVal = probe(key, i);
+
+            //if the slot is empty, add key into hashvalue index and break out of loop.
+            if (isSlotEmpty(hashVal)) {
+                this.Table[hashVal] = key;
+                return i;
+            }
+
+        }
+
+        // returns -1 if there is an error
         return -1;
+
     }
+
 
     /**
      * Removes key k from hash table. Returns the number of collisions
@@ -57,7 +80,31 @@ public class Open_Addressing {
      */
     public int removeKey(int key) {
         //ADD YOUR CODE HERE (CHANGE THE RETURN STATEMENT)
+
+
+        //i represents the number of slots visited before the key to be removed is found.
+        //the number of iterations of the loop (i) is equivalent to number of slots visited.
+        for (int i = 0; i < this.m; i++) {
+            int hashVal = probe(key, i);
+
+            //if the key at hash value index equals key given by user, set to -2 to represent it being "removed"
+            if (!isSlotEmpty(hashVal)) {
+
+                if (this.Table[hashVal] == key) {
+                    this.Table[hashVal] = -2;
+                    return i;
+                }
+            }
+
+            else {
+                return i;
+            }
+
+        }
+
+        //returns -1 if there is an error
         return -1;
+
     }
 
 }
