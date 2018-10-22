@@ -28,8 +28,8 @@ public class Chaining {
      */
     public int chain(int key) {
         //ADD YOUR CODE HERE (change return statement)
-        int hashVal = ((A * key) % Math.pow(2, w);
-        return hashVal;
+
+        return (int) ((A * key) % Math.pow(2, w)) >>> (w-r);
     }
 
     /**
@@ -45,7 +45,25 @@ public class Chaining {
      */
     public int insertKey(int key) {
         //ADD YOUR CODE HERE (chane return statement)
-        return -1;
+
+        //initialized number of collisions
+        int numColl = 0;
+        int indexNum = chain(key); //getting hash value for key, and storing it as indexNum of hashtable
+
+        //if slot is empty, add key
+        if(isSlotEmpty(indexNum)){
+            Table.get(indexNum).add(key);
+            numColl = 0;
+        }
+
+        //if not empty, add key to array list at indexnum
+        else{
+            Table.get(indexNum).add(key);
+            numColl = Table.get(indexNum).size();
+        }
+
+        //return num of collisions
+        return numColl;
     }
 
 }

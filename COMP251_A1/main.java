@@ -5,6 +5,9 @@ import A1.Open_Addressing.*;
 import java.io.*;
 import java.util.*;
 
+//collabed with Nima Chatlani and Miki Sugita
+
+
 public class main {
 
     /**
@@ -97,6 +100,27 @@ public class main {
                         The CSV file will output the result which you can visualize
              */
             //ADD YOUR CODE HERE
+            //initializing collision variables
+            int probColl = 0;
+            int chainColl = 0;
+
+            //storing number of collisions while inserting keys in corresponding hash tables
+            for(int i = 0; i < n; i++){
+                chainColl += MyChainTable.insertKey(keysToInsert[i]);
+                probColl += MyProbeTable.insertKey(keysToInsert[i]);
+            }
+
+            //initializing load factor
+            double alpha = (double) n / (double) MyChainTable.m;
+            alphaList.add(alpha); //adding
+
+            //calculating avg num of collisions per hash function
+            double avgChainCol = (double) chainColl/ (double) n;
+            double avgProbCol = (double) probColl/ (double) n;
+
+            //adding avg num of collisions into the list
+            avColListChain.add(avgChainCol);
+            avColListProbe.add(avgProbCol);
         }
 
         generateCSVOutputFile("n_comparison.csv", alphaList, avColListChain, avColListProbe);
@@ -113,6 +137,25 @@ public class main {
             205, 186, 107, 179};
 
         //ADD YOUR CODE HERE
+
+        //intizialing new probe table with same seed of 137
+        Open_Addressing probeRmTable = new Open_Addressing(w, 137);
+
+        //inserting keys into table
+        for (int i = 0; i < 16; i++){
+
+            probeRmTable.insertKey(keysToInsert[i]);
+
+        }
+
+        //removing n from keysToRemove from the probe table
+        for (int i = 0; i < keysToRemove.length - 1; i++){
+
+            removeCollisions.add((double) probeRmTable.removeKey(keysToRemove[i]));
+            removeIndex.add((double) i);
+
+        }
+
         generateCSVOutputFile("remove_collisions.csv", removeIndex, removeCollisions, removeCollisions);
 
         /*===========PART 3 : Experimenting with w===================*/
@@ -131,6 +174,53 @@ public class main {
         ArrayList<Double> avColListProbe2 = new ArrayList<Double>();
 
         //ADD YOUR CODE HERE
+
+        //initializing number of elems
+        int numOfElems = 16;
+        int[] varyWArr = new int[numOfElems]; //initializing array
+
+        //initializing collision variables
+        int chainColl;
+        int probeColl;
+
+        for(int i = 0; i < numOfElems; i++){
+
+            varyWArr[i] = generateRandom(0,1000,-1);
+
+        }
+
+        for(int varyW = 5; varyW <= 15; ++varyW){
+
+            Chaining MyChainVaryWTable = new Chaining(varyW, -1);
+            Open_Addressing MyProbeVaryWTable = new Open_Addressing(varyW, -1);
+
+            //resetting collisions to 0 after inserting key to varying tables
+            chainColl = 0;
+            probeColl = 0;
+
+            for(int i = 0; i < numOfElems; i++){
+
+                int temp = MyChainVaryWTable.insertKey(varyWArr[i]);
+                chainColl += temp;
+
+                temp = MyProbeVaryWTable.insertKey(varyWArr[i]);
+                probeColl += temp;
+
+            }
+
+            //load factor alpha = number of keys inserted/number of slots in hash table
+            double alpha = (double) numOfElems / (double) MyChainVaryWTable.m;
+            alphaList2.add(alpha);
+
+            //calculating avg num of collisions per hash function
+            double avgChainCol = (double) chainColl/(double) numOfElems;
+            double avgProbCol = (double) probeColl/ (double) numOfElems;
+
+            //adding avg num of collisions into the list
+            avColListChain2.add(avgChainCol);
+            avColListProbe2.add(avgProbCol);
+        }
+
         generateCSVOutputFile("w_comparison.csv", alphaList2, avColListChain2, avColListProbe2);
 
     }
