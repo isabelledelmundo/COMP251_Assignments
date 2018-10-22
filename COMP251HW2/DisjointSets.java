@@ -57,18 +57,63 @@ public class DisjointSets {
     public int find(int i) {
 
         /* Fill this method (The statement return 0 is here only to compile) */
-        return 0;
+
+        if (par[i] == i){
+            return i;
+        }
+
+
+        else{
+
+            par[i] = find(par[i]);
+            return par[i];
+        }
         
     }
 
     /* merge sets containing elements i and j */
     public int union(int i, int j) {
-    
+
+        int rep = 0;
+
         /* Fill this method (The statement return 0 is here only to compile) */
-        return 0;
-        
-    }
-    
+
+            if(rank[j] == rank[i]){
+
+                rank[j] = rank[i] + 1;
+                rank[i] = rank[j];
+                par[i] = find(j);
+                //par[j] = find(par[i]);
+
+                return find(j);
+
+            }
+
+            else if(rank[find(j)] > rank[find(i)]){
+
+                //rank[j] = rank[i] + rank[j];
+                //rank[i] = rank[j];
+                par[i] = find(j);
+                //par[j] = find(par[i]);
+
+                return find(j);
+            }
+
+            else{
+
+                rank[i] = rank[j] + rank[i];
+                rank[j] = rank[i];
+                //par[i] = find(par[j]);
+                par[j] = find(i);
+
+                return find(i);
+
+            }
+
+
+        }
+
+
     public static void main(String[] args) {
         
         DisjointSets myset = new DisjointSets(6);
