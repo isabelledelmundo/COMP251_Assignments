@@ -59,7 +59,9 @@ public class DisjointSets {
         /* Fill this method (The statement return 0 is here only to compile) */
 
         if (par[i] == i){
+
             return i;
+
         }
 
 
@@ -74,41 +76,37 @@ public class DisjointSets {
     /* merge sets containing elements i and j */
     public int union(int i, int j) {
 
-        int rep = 0;
+
 
         /* Fill this method (The statement return 0 is here only to compile) */
 
-            if(rank[j] == rank[i]){
+        if(find(i) == find(j)){
+            return find(i);
+        }
 
-                rank[j] = rank[i] + 1;
-                rank[i] = rank[j];
-                par[i] = find(j);
-                //par[j] = find(par[i]);
+        if(rank[find(j)] == rank[find(i)]){
 
-                return find(j);
+            rank[find(j)]++;
+            par[find(i)] = find(j);
 
-            }
+            return find(j);
 
-            else if(rank[find(j)] > rank[find(i)]){
+        }
 
-                //rank[j] = rank[i] + rank[j];
-                //rank[i] = rank[j];
-                par[i] = find(j);
-                //par[j] = find(par[i]);
+        else if(rank[find(j)] > rank[find(i)]){
 
-                return find(j);
-            }
+            par[find(i)] = find(j);
 
-            else{
+            return find(j);
+        }
 
-                rank[i] = rank[j] + rank[i];
-                rank[j] = rank[i];
-                //par[i] = find(par[j]);
-                par[j] = find(i);
+        else{
 
-                return find(i);
+            par[find(j)] = find(i);
 
-            }
+            return find(i);
+
+        }
 
 
         }
