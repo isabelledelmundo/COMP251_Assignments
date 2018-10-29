@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6c52c0f-092f-41b7-b212-1b9497e7bef4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DisjointSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/DisjointSets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GreedyTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/GreedyTester.java" afterDir="false" />
@@ -60,14 +61,47 @@
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
     </session>
+    <session id="1637980103">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="238" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="238" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Kruskal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
               <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+=======
+        <entry file="file://$PROJECT_DIR$/DisjointSets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
             </state>
           </provider>
         </entry>
@@ -75,12 +109,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unionfind.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="34">
               <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW_Sched.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,10 +124,27 @@
               <folding>
                 <element signature="e#1277#1289#0" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GreedyTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_Sched.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DisjointSets.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,6 +153,13 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Kruskal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
             </state>
           </provider>
         </entry>
@@ -108,8 +167,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GreedyTester.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+=======
+            <state relative-caret-position="102">
+              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
             </state>
           </provider>
         </entry>
@@ -136,9 +200,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
+=======
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -313,12 +382,22 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540583515851" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540259617832" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="terminal" />
@@ -405,12 +484,19 @@
       <updated>1539899721762</updated>
       <workItem from="1539899725342" duration="3003000" />
       <workItem from="1540152699536" duration="6864000" />
+<<<<<<< HEAD
       <workItem from="1540163866740" duration="15412000" />
       <workItem from="1540567461749" duration="9413000" />
+=======
+      <workItem from="1540163866740" duration="479000" />
+      <workItem from="1540177417993" duration="1437000" />
+      <workItem from="1540257060265" duration="3095000" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="34692000" />
   </component>
   <component name="ToolWindowManager">
@@ -418,6 +504,15 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
+=======
+    <option name="totallyTimeSpent" value="14878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26451612" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -426,7 +521,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.26496816" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17758985" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,15 +588,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unionfind.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="30">
+=======
+        <state relative-caret-position="34">
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WGraph.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-18">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+=======
+        <state relative-caret-position="102">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DisjointSets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
         </state>
       </provider>
     </entry>
@@ -506,23 +621,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DisjointSets.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="67">
           <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GreedyTester.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+=======
+        <state relative-caret-position="527">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kruskal.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="308">
           <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
@@ -535,6 +661,10 @@
           <folding>
             <element signature="e#1277#1289#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+>>>>>>> a68df6c770e885292579dbce0f8cfeb8b2d68ef6
         </state>
       </provider>
     </entry>
