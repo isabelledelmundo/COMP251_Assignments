@@ -58,6 +58,8 @@ public class DisjointSets {
 
         /* Fill this method (The statement return 0 is here only to compile) */
 
+        //if the parent of i is equal to i
+        //that means that i is the root of the subtree within the disjoint set
         if (par[i] == i){
 
             return i;
@@ -66,7 +68,6 @@ public class DisjointSets {
 
 
         else{
-
             par[i] = find(par[i]);
             return par[i];
         }
@@ -80,19 +81,31 @@ public class DisjointSets {
 
         /* Fill this method (The statement return 0 is here only to compile) */
 
+        //checks if the roots of both are the same already, and if they are
+        //return find(i) since they're the same anyways
         if(find(i) == find(j)){
+
             return find(i);
+
         }
 
+        //if the ranks of both representatives equal each other
+        //update rank of j
+        //add i to parent of j
+        //return new representative of combined trees
         if(rank[find(j)] == rank[find(i)]){
 
-            rank[find(j)]++;
+            rank[find(j)] +=  1;
             par[find(i)] = find(j);
+
 
             return find(j);
 
         }
 
+        //if the rank of j is larger than the rank of i
+        //add i to parent of j
+        //return new representative of combined trees
         else if(rank[find(j)] > rank[find(i)]){
 
             par[find(i)] = find(j);
@@ -100,6 +113,9 @@ public class DisjointSets {
             return find(j);
         }
 
+        //if the rank of i is larger than the rank of j
+        //add j to parent of i
+        //return new representative of combined trees
         else{
 
             par[find(j)] = find(i);
@@ -108,8 +124,7 @@ public class DisjointSets {
 
         }
 
-
-        }
+    }
 
 
     public static void main(String[] args) {
