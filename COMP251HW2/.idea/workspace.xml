@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6c52c0f-092f-41b7-b212-1b9497e7bef4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DisjointSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/DisjointSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP251HW2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP251HW2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP251HW2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP251HW2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP251HW2/A2/DisjointSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP251HW2/A2/DisjointSets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP251HW2/A2/HW_Sched.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP251HW2/A2/HW_Sched.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP251HW2/A2/WGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP251HW2/A2/WGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/.idea/libraries/JavaPlotBuilder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/.idea/libraries/JavaPlotBuilder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/COMP251_A1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/JavaPlotBuilder.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/n_comparison.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/remove_collisions.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COMP251_A1/out/production/COMP251_A1/w_comparison.csv" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,10 +51,11 @@
     <session id="1637980103">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -102,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DisjointSets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="1785">
               <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
             </state>
           </provider>
@@ -135,19 +114,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kruskal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="238">
+              <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="17">
               <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
             </state>
           </provider>
@@ -171,9 +150,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1368" />
+    <option name="y" value="-8" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1064" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -183,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,24 +177,18 @@
               <item name="COMP251HW2" type="462c0819:PsiDirectoryNode" />
               <item name="HW_Sched.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
-            <path>
-              <item name="COMP251HW2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP251HW2" type="462c0819:PsiDirectoryNode" />
-              <item name="WGraph.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540259617832" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540260377201" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../COMP251HW3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -263,18 +239,18 @@
       <workItem from="1540152699536" duration="6864000" />
       <workItem from="1540163866740" duration="479000" />
       <workItem from="1540177417993" duration="1437000" />
-      <workItem from="1540257060265" duration="3095000" />
+      <workItem from="1540257060265" duration="3887000" />
+      <workItem from="1541270170553" duration="628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14878000" />
+    <option name="totallyTimeSpent" value="16298000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1368" y="-8" width="1376" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26451612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3776596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -283,7 +259,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17758985" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17758985" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,24 +290,17 @@
     <entry file="file://$PROJECT_DIR$/g1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/DisjointSets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unionfind.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DisjointSets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -351,8 +320,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kruskal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="238">
+          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
         </state>
       </provider>
     </entry>
