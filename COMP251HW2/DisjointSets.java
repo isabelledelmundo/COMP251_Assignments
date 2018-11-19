@@ -61,9 +61,7 @@ public class DisjointSets {
         //if the parent of i is equal to i
         //that means that i is the root of the subtree within the disjoint set
         if (par[i] == i){
-
             return i;
-
         }
 
 

@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class BellmanFord{
 
 	
@@ -56,8 +58,60 @@ public class BellmanFord{
          *  
          *  When throwing an exception, choose an appropriate one from the ones given above
          */
-        
-        /* YOUR CODE GOES HERE */
+
+        this.distances = new int[g.getNbNodes()];
+        this.predecessors = new int[g.getNbNodes()];
+        this.source = source;
+
+        int beginN;
+        int endN;
+        int sum = 0;
+
+        this.distances[this.source] = 0;
+        for (int i = 0; i < this.distances.length; i++){
+
+            if (this.source != i){
+                this.distances[i] = Integer.MAX_VALUE;
+            }
+
+        }
+
+        ArrayList<Edge> edges = new ArrayList<Edge>(g.getEdges());
+
+
+
+        for (int j = 0; j < this.distances.length - 1; j++){
+
+            for (Edge e : edges){
+
+                beginN = e.nodes[0];
+                endN = e.nodes[1];
+                sum = this.distances[beginN] + e.weight;
+
+                if (sum < this.distances[endN]){
+                    this.distances[endN] = sum;
+                    this.predecessors[endN] = beginN;
+                }
+
+            }
+
+        }
+
+
+        for (Edge e : edges) {
+
+            beginN = e.nodes[0];
+            endN = e.nodes[1];
+            sum = this.distances[beginN] + e.weight;
+
+            if (sum < this.distances[endN]) {
+
+                throw new NegativeWeightException("Negative Weight Cycle Exists!");
+            }
+
+        }
+
+
     }
 
     public int[] shortestPath(int destination) throws BellmanFordException{
@@ -68,13 +122,54 @@ public class BellmanFord{
          */
 
         /* YOUR CODE GOES HERE (update the return statement as well!) */
-        
-        return null;
+
+
+        ArrayList<Integer> nodes = new ArrayList<Integer>();
+
+        nodes.add(destination);
+        int path = destination;
+        boolean pathFound = false;
+
+        for (int i = 1; i < this.distances.length; ++i){
+
+            if(this.predecessors[path] != destination){
+                nodes.add(this.predecessors[path]);
+            }
+
+            if (this.predecessors[path] == this.source){
+                pathFound = true;
+                //endIndex = i;
+                break;
+            }
+
+            path = this.predecessors[path];
+
+        }
+
+        if (!pathFound){
+
+            throw new PathDoesNotExistException("Err: Path Does Not Exist!");
+
+        }
+
+        int length = nodes.size();
+
+        int[] pathList = new int[length];
+        for (int j = 0; j < length; j++){
+
+            pathList[j] = nodes.get(length - 1 - j);
+
+        }
+
+        return pathList;
+
+
+
     }
 
     public void printPath(int destination){
         /*Print the path in the format s->n1->n2->destination
-         *if the path exists, else catch the Error and 
+         *if the path exists, else catch the Error and
          *prints it
          */
         try {
