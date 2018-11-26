@@ -1,3 +1,5 @@
+//Name: Isabelle del Mundo
+//ID: 260672965
 import java.util.*;
 import java.io.*;
 
@@ -13,15 +15,83 @@ public class Multiply{
 
         // YOUR CODE GOES HERE  (Note: Change return statement)
 
-        return null;
+        int[] result = new int[2];
+
+        //base case
+        if(size == 1){
+
+            result[0] = x * y;
+            result[1] = 1;
+
+            return result;
+
+        }
+
+        //inductive case
+
+        //initializing m, a, b, c, d variables according to algorithm discussed in class
+        int m = (int) Math.ceil(size / 2.0);
+
+        int a = (int) (x / Math.pow(2, m));
+        int b = (int) (x % Math.pow(2, m));
+        int c = (int) (y / Math.pow(2, m));
+        int d = (int) (y % Math.pow(2, m));
+
+        int[] e = naive(m, a, c);
+        int[] f = naive(m, b, d);
+        int[] g = naive(m, b, c);
+        int[] h = naive(m, a, d);
+
+        //value of multiplied integer
+        result[0] = (int) ((int)Math.pow(2, 2*m)*e[0] + (int)Math.pow(2, m)*(g[0] +h[0]) + f[0]);
+
+        //number of recursive calls made in Naive method
+        result[1] = (e[1] + f[1] + g[1] + h[1]) + (3 * m);
+
+        return result;
 
     }
 
     public static int[] karatsuba(int size, int x, int y) {
 
         // YOUR CODE GOES HERE  (Note: Change return statement)
+        int[] result = new int[2];
 
-        return null;
+        //base case
+        if(size == 1){
+
+            result[0] = x * y;
+            result[1] = 1;
+
+            return result;
+
+        }
+
+        //inductive case
+
+        //initializing m, a, b, c, d variables according to algorithm discussed in class
+        int m = (int) Math.ceil(size / 2.0);
+
+        int a = (int) (x / Math.pow(2, m));
+        int b = (int) (x % Math.pow(2, m));
+        int c = (int) (y / Math.pow(2, m));
+        int d = (int) (y % Math.pow(2, m));
+
+        //recursive calls back to Karatsuba
+        int[] e = karatsuba(m, a, c);
+        int[] f = karatsuba(m, b, d);
+
+        int[] g = karatsuba(m, a - b, c - d);
+
+
+        //value of multiplied integer
+        result[0] = (int) (((int) Math.pow(2, 2 * m) * e[0]) + ((int)Math.pow(2, m) * (e[0] + f[0] - g[0])) + f[0]);
+
+        //number of recursive calls made in Karatsuba method
+        result[1] = (e[1] + f[1] + g[1]) + (6 * m);
+
+        return result;
+
 
     }
 
